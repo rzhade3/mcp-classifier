@@ -1,0 +1,9 @@
+[project]
+name = "cwe-classifier"
+version = "0.1.0"
+description = "A semantic search tool for Common Weakness Enumeration (CWE) database using ChromaDB vector embeddings"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=1.0.13",
+]

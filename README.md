@@ -25,9 +25,14 @@ git clone <repository-url>
 cd cwe-classifier
 ```
 
-2. Install dependencies:
+2. Install uv (if you haven't already):
 ```bash
-pip install -r requirements.txt
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+3. Install dependencies:
+```bash
+uv sync
 ```
 
 ## Data Format
@@ -129,8 +134,8 @@ Found 5 results:
 
 If you encounter issues:
 1. Check that your CSV file has the required columns
-2. Ensure ChromaDB is properly installed
-3. Verify Python version compatibility (3.7+)
+2. Ensure ChromaDB is properly installed with `uv sync` or `uv pip install chromadb`
+3. Verify Python version compatibility (3.8+)
 
 ## Acknowledgments
 
